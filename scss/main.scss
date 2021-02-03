@@ -1,0 +1,30 @@
+//VRIBLES//
+$primary-color: #ec2f11;
+
+
+@import '../css/imported.css';
+@import '../scss/_mixins.scss';
+@import '../scss/_owl.scss';
+
+
+.text-orange {
+    color: #f77014;
+}
+.navbar-brand {
+    display: inline-flex;
+    h1 {
+        color: #fff;
+        margin: .5rem 0 0 1rem
+    }
+}
+
+.navbar.navbar-light.bg-faded {
+    background-color: #283339;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+
+
