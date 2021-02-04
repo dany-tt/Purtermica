@@ -1,13 +1,14 @@
 //VRIBLES//
 $primary-color: #ec2f11;
+$secondary-color: #f77014;
+$dark-color: #283339;
 
 @import '../css/imported.css';
 @import '../scss/_mixins.scss';
 @import '../scss/_owl.scss';
 
-
 .text-orange {
-    color: #f77014;
+    color: $secondary-color;
 }
 .navbar-brand {
     display: inline-flex;
@@ -17,13 +18,53 @@ $primary-color: #ec2f11;
     }
 }
 
-.navbar.navbar-light.bg-faded {
-    background-color: #283339;
+.bg-dark {
+    background-color: $dark-color !important;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.bg-dark, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
 }
 
+@media (max-width: 991px) {
+    .navbar.navbar-light.navbar-transparent.bg-dark, .navbar.navbar-light.navbar-transparent.bg-dark.fixed-top {
+        background-color: $dark-color !important;
+    }
+    .navbar.navbar-light.navbar-transparent.bg-dark .navbar-toggler .navbar-toggler-icon:after, .navbar.navbar-light.navbar-transparent.bg-dark.fixed-top .navbar-toggler .navbar-toggler-icon:after {
+        content: "\f0c9";
+        font-family: 'FontAwesome';
+        color: #fff;
+        font-size: 32px;
+    }
 
+    .navbar-brand img {
+        max-width: 50px;
+        height: 100%;
+        margin-top: .8rem;
+    }
+}
 
+.footer {
+    color: #fff;
+    img {
+        max-width: 30px;
+        height: 30px;
+    }
+}
+
+.si-colored-whatsapp {
+    background-color: #25d366;
+}
+.custom-checkbox .custom-control-indicator::before {
+    content: '\f00c';
+    font-family: 'FontAwesome';
+}
+
+.testimonail-card i {
+    font-size: 40px;
+    color: $secondary-color;
+}
+.back-to-top-social {
+    background: #25d366 !important;
+    bottom: 10px;
+}
