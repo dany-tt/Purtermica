@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/753b380db6.js" crossorigin="anonymous"></script>
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/showYtVideo.css" rel="stylesheet" type="text/css">
 </head>
 
 <body data-spy="scroll" data-offset="62" data-target="#navbarlanding">
@@ -68,9 +69,8 @@
                             acá iria un texto de bienvenida, pero no un texto de quienes somos, eso va mas abajo.<br>
                             Tambien puede ser un texto presentando el video.
                         </p>
-
-                        <a href="https://www.youtube.com/watch?v=_xAklPmvnqo"
-                            class="btn btn-primary mr-3 mb-2 modal-video"><i class="fa fa-play"></i>Ver video</a>
+                        <button class="btn btn-primary mr-3 mb-2 show-modal">
+                            <i class="fa fa-play"></i>Ver video</button>
                     </div>
                 </div>
                 <div class="col-lg-6 mr-auto pb60">
@@ -157,7 +157,7 @@
             </div>
         </div>
     </div>
-    <div >
+    <div id="galeria" data-scroll-id="galeria">
         <section class="portfolio-area section-gap">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -292,8 +292,8 @@
                             </div>
                             <div class="owl-controls">
                                 <div class="owl-nav">
-                                    <div class="owl-prev" style=""><img src="img/prev.png"></div>
-                                    <div class="owl-next" style=""><img src="img/next.png"></div>
+                                    <div class="owl-prev"><img src="img/prev.png"></div>
+                                    <div class="owl-next"><img src="img/next.png"></div>
                                 </div>
                                 <div style="display: none;" class="owl-dots"></div>
                             </div>
@@ -426,12 +426,23 @@
     </footer>
     <!--back to top  -->
     <a href="#" class="back-to-top" id="back-to-top"><i class="fas fa-chevron-up"></i></a>
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="js/plugins.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/minimal-flat.js"></script>
 
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.showYtVideo.js"></script>
+    <script>
+    jQuery(document).ready(function ($) {
+        $('.show-modal').on('click', function () {
+            $.showYtVideo({
+                videoId: 'zVqj87bzte0'
+            });
+        });
+    });
+    </script>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="js/plugins.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/owl.js"></script>
+        <script src="js/minimal-flat.js"></script>
 
 </body>
 

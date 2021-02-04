@@ -272,7 +272,7 @@
     position: absolute;
     top: 30px;
     right: -10px;
-    background: transparent;
+    background: #fff;
     z-index: 999;
     height: 50px;
     width: 50px;
