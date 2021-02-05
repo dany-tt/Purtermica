@@ -3,299 +3,6 @@
 /* Tablet Layout: 768px */
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
-/**
- * Owl Carousel v2.2.0
- * Copyright 2013-2016 David Deutsch
- * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
- */
-/*
- *  Owl Carousel - Core
- */
-.owl-carousel {
-  display: none;
-  width: 100%;
-  -webkit-tap-highlight-color: transparent;
-  /* position relative and z-index fix webkit rendering fonts issue */
-  position: relative;
-  z-index: 1; }
-
-.owl-carousel .owl-stage {
-  position: relative;
-  -ms-touch-action: pan-Y; }
-
-.owl-carousel .owl-stage:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-.owl-carousel .owl-stage-outer {
-  position: relative;
-  overflow: hidden;
-  /* fix for flashing background */
-  -webkit-transform: translate3d(0px, 0px, 0px); }
-
-.owl-carousel .owl-item {
-  position: relative;
-  min-height: 1px;
-  float: left;
-  -webkit-backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none; }
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-  -webkit-transform-style: preserve-3d; }
-
-.owl-carousel .owl-nav.disabled,
-.owl-carousel .owl-dots.disabled {
-  display: none; }
-
-.owl-carousel .owl-nav .owl-prev,
-.owl-carousel .owl-nav .owl-next,
-.owl-carousel .owl-dot {
-  cursor: pointer;
-  cursor: hand;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.owl-carousel.owl-loaded {
-  display: block; }
-
-.owl-carousel.owl-loading {
-  opacity: 0;
-  display: block; }
-
-.owl-carousel.owl-hidden {
-  opacity: 0; }
-
-.owl-carousel.owl-refresh .owl-item {
-  visibility: hidden; }
-
-.owl-carousel.owl-drag .owl-item {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.owl-carousel.owl-grab {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab; }
-
-.owl-carousel.owl-rtl {
-  direction: rtl; }
-
-.owl-carousel.owl-rtl .owl-item {
-  float: right; }
-
-/* No Js */
-.no-js .owl-carousel {
-  display: block; }
-
-/*
- *  Owl Carousel - Animate Plugin
- */
-.owl-carousel .animated {
-  -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.owl-carousel .owl-animated-in {
-  z-index: 0; }
-
-.owl-carousel .owl-animated-out {
-  z-index: 1; }
-
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-/*
- * 	Owl Carousel - Auto Height Plugin
- */
-.owl-height {
-  transition: height 500ms ease-in-out; }
-
-/*
- * 	Owl Carousel - Lazy Load Plugin
- */
-.owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
-  transition: opacity 400ms ease; }
-
-.owl-carousel .owl-item img.owl-lazy {
-  transform-style: preserve-3d; }
-
-/*
- * 	Owl Carousel - Video Plugin
- */
-.owl-carousel .owl-video-wrapper {
-  position: relative;
-  height: 100%;
-  background: #000; }
-
-.owl-carousel .owl-video-play-icon {
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  left: 50%;
-  top: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
-  background: url("owl.video.play.png") no-repeat;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-  transition: transform 100ms ease; }
-
-.owl-carousel .owl-video-play-icon:hover {
-  transform: scale(1.3, 1.3); }
-
-.owl-carousel .owl-video-playing .owl-video-tn,
-.owl-carousel .owl-video-playing .owl-video-play-icon {
-  display: none; }
-
-.owl-carousel .owl-video-tn {
-  opacity: 0;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: opacity 400ms ease; }
-
-.owl-carousel .owl-video-frame {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  width: 100%; }
-
-/* Start portfolio Area css
-============================================================================================ */
-.portfolio-area {
-  margin: 30px 0; }
-  .portfolio-area .portfolio-main {
-    padding-left: 14%; }
-    @media (max-width: 767px) {
-      .portfolio-area .portfolio-main {
-        margin-bottom: 50px;
-        padding-left: 0px; } }
-    .portfolio-area .portfolio-main h1 {
-      font-size: 48px;
-      margin-bottom: 20px; }
-      @media (max-width: 767px) {
-        .portfolio-area .portfolio-main h1 {
-          font-size: 30px; } }
-    .portfolio-area .portfolio-main .primary-btn {
-      margin-top: 30px; }
-
-.active-gallery-carousel {
-  text-align: center; }
-  .active-gallery-carousel .owl-nav {
-    position: absolute;
-    right: 35%;
-    bottom: -60px; }
-    @media (max-width: 1024px) {
-      .active-gallery-carousel .owl-nav {
-        right: 35%;
-        bottom: -60px; } }
-    @media (max-width: 991px) {
-      .active-gallery-carousel .owl-nav {
-        right: 35%;
-        bottom: -60; } }
-    @media (max-width: 767px) {
-      .active-gallery-carousel .owl-nav {
-        right: 35%;
-        bottom: -60; } }
-    .active-gallery-carousel .owl-nav .owl-prev,
-    .active-gallery-carousel .owl-nav .owl-next {
-      display: inline-block;
-      margin: 20px;
-      transition: all 0.3s ease 0s;
-      opacity: 1; }
-      .active-gallery-carousel .owl-nav .owl-prev:hover,
-      .active-gallery-carousel .owl-nav .owl-next:hover {
-        opacity: .5; }
-
-.single-gallery {
-  position: relative;
-  display: inline-block; }
-  .single-gallery img {
-    width: 100%; }
-  .single-gallery:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    content: "";
-    background: #000;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease 0s; }
-  .single-gallery .gallery-content {
-    position: absolute;
-    padding: 30px;
-    left: -10%;
-    bottom: -20%;
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease 0s; }
-    .single-gallery .gallery-content p {
-      text-transform: uppercase;
-      color: #ec2f11;
-      font-weight: 400; }
-    .single-gallery .gallery-content h4 {
-      font-size: 24px;
-      color: #fff;
-      line-height: 35px !important; }
-  .single-gallery .light-box {
-    position: absolute;
-    top: 30px;
-    right: -10px;
-    background: #fff;
-    z-index: 999;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 20px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease 0s; }
-  .single-gallery:hover:after {
-    opacity: .65;
-    visibility: visible; }
-  .single-gallery:hover .gallery-content {
-    opacity: 1;
-    visibility: visible;
-    bottom: 20px;
-    left: 0; }
-  .single-gallery:hover .light-box {
-    right: 30px;
-    top: 30px;
-    opacity: 1;
-    visibility: visible; }
-
 .text-orange {
   color: #f77014; }
 
@@ -330,6 +37,9 @@
     max-width: 30px;
     height: 30px; }
 
+.bg-faded {
+  background: #f2f3f7 !important; }
+
 .si-colored-whatsapp {
   background-color: #25d366; }
 
@@ -344,3 +54,74 @@
 .back-to-top-social {
   background: #25d366 !important;
   bottom: 10px; }
+
+.item img {
+  max-width: 232px;
+  min-height: 410px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+/*
+Cards features,  icons, images, teams etc.
+*/
+.feature-icon i {
+  font-size: 44px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 1.5rem; }
+
+.feature-icon h4 {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 600; }
+
+.feature-icon h4:after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #f77014;
+  position: absolute;
+  left: 0;
+  margin-left: 0;
+  bottom: 0; }
+
+.feature-img {
+  max-width: 500px;
+  position: absolute; }
+
+.feature-img.img-right {
+  right: 0; }
+
+.feature-img.img-left {
+  left: 0; }
+
+.feature-list li {
+  padding-left: 30px;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 1rem; }
+
+.feature-list li:before {
+  content: "\e959";
+  font-family: 'Linearicons';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem; }
+
+@media (min-width: 992px) {
+  .feature-img-section {
+    position: relative; }
+  .feature-img {
+    position: absolute;
+    max-width: 600px; }
+  .feature-img.pos-left {
+    left: 0; }
+  .feature-img.pos-right {
+    right: 0; } }

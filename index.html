@@ -12,11 +12,9 @@
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/showYtVideo.css" rel="stylesheet" type="text/css">
-
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+        defer></script>
 
 </head>
 
@@ -30,7 +28,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.jpg" alt="">
+               <img src="img/logo.jpg" alt="">
                 <h1>Purtermica</h1>
             </a>
 
@@ -43,15 +41,18 @@
                         <a class="nav-link" data-scroll="" href="#quienes">Quiénes Sómos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll="" href="#historia">Historia</a>
+                        <a class="nav-link" data-scroll="" href="#galeria">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-scroll="" href="#clientes">Clientes</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" data-scroll="" href="#producto">Producto</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link btn btn-primary" data-scroll="" href="#contacto">Contacto</a>
                     </li>
-<!--                     <li class="nav-item dropdown">
+                    <!--                     <li class="nav-item dropdown">
                         <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             más links...
@@ -74,28 +75,28 @@
                     <h2 class="mb20 h1 font300">Bienvenidos a Purtermica</h2>
                     <div class="clearfix">
                         <p class="lead">Empresa líder en aislamiento termo hidrófugo con poliuretano expandido.<br>
-                        Acá podrás conocer un poco más sobre nuestros trabajos.</p>
+                            Acá podrás conocer un poco más sobre nuestros trabajos.</p>
                         <button class="btn btn-primary mr-3 mb-2 show-modal">
                             <i class="fa fa-play"></i>Ver video</button>
                     </div>
                 </div>
                 <div class="col-lg-5 mr-auto pb60">
-                    <img src="img/ceeling.svg" class="img-fluid" alt="">
+                   <img src="img/ceeling.svg" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!--home-->
 
-    <div id="quienes" class="pt90 pb60 bg-faded" data-scroll-id="quienes" tabindex="-1"
+    <div id="quienes" class="pt90 pb60" data-scroll-id="quienes" tabindex="-1"
         style="outline: currentcolor none medium;">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-8 ml-auto mr-auto mb60 wow fadeInUp" data-wow-delay=".1s"
                     style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                     <h2 class="font300 text-center h1">Quiénes Sómos</h2>
-                    <p class="lead text-center">Somos una empresa con más de 15 años de trayectoria dedicados al aislamiento termo hidrófugo con poliuretano expandido.</p>
+                    <p class="lead text-center">Somos una empresa con más de 15 años de trayectoria dedicados al
+                        aislamiento termo hidrófugo con poliuretano expandido.</p>
                 </div>
             </div>
             <div class="row">
@@ -103,178 +104,107 @@
                     style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                     <div class="fas fa-paint-roller text-primary fa-3x mb30"></div>
                     <h3>Valores</h3>
-                    <p>Contamos con personal altamente calificado y equipamiento de última generación, maquinarias hidráulicas y neumáticas, para ofrecer el mejor servicio.</p>
+                    <p>Contamos con personal altamente calificado y equipamiento de última generación, maquinarias
+                        hidráulicas y neumáticas, para ofrecer el mejor servicio.</p>
                     <p>La responsabilidad y la honestidad son los pilares que demuestran nuestra trayectoria.<br>
                         Nuestros trabajos cuentan con garantía. </p>
                 </div>
                 <div class="col-lg-4 text-center mb30 wow fadeInUp" data-wow-delay=".2s"
                     style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                     <div class="fas fa-home text-orange fa-3x mb30"></div>
-                    <h3>Historia</h3>
-                    <p>Desde los comienzos contamos con la mejor tecnología y con los medios de producción más avanzados, con materias primas de respaldo internacional.</p>
-                    <p>Empresas de primera línea nos han confiado sus obras y proyectos, las cuales hemos satisfecho con responsabilidad y constante dedicación, entendiendo que la aceptación de nuestros clientes es nuestra mejor carta de presentación. </p>
+                    <h3>galeria</h3>
+                    <p>Desde los comienzos contamos con la mejor tecnología y con los medios de producción más
+                        avanzados, con materias primas de respaldo internacional.</p>
+                    <p>Empresas de primera línea nos han confiado sus obras y proyectos, las cuales hemos satisfecho con
+                        responsabilidad y constante dedicación, entendiendo que la aceptación de nuestros clientes es
+                        nuestra mejor carta de presentación. </p>
                 </div>
                 <div class="col-lg-4 text-center mb30 wow fadeInUp" data-wow-delay=".3s"
                     style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
                     <div class="fas fa-user text-warning fa-3x mb30"></div>
                     <h3>Servicios</h3>
-                    <p>Aislamiento termo hidrófugo con poliuretano expandido.</p>
-                    <p>Los beneficios de aislar su casa, empresa, comercio o fábrica, con la espuma de poliuretano, acarrea un menor costo de uso energético, tanto en invierno como en verano, puesto que la espuma aísla las bajas y altas temperaturas.<br>
-                        La espuma de poliuretano se utiliza para aislar techos, losas y paredes. Su colocación puede ser interna,  durante la construcción, o luego si la aislación existente no fuera suficiente.<br>
-                    <p>Se trata de un producto de rápida aplicación y de resultados inmediatos, ya que la espuma seca en segundos</p>
+                        <p>Aislaciones industriales<br>
+                        Aislaciones en viviendas<br>
+                        Aislaciones en Vehículos<br>
+                        Aislaciones Agro/Ganaderas<br>
+                        Aislaciones de pisos, muros y techos.<br>
+                        Aislaciones de tuberías aeréas o subterraneas.<br>
+                        Proyección y/o inyección en tanques industriales.<br>
+                        Aislaciones en containers de transporte o habitacionales.<br>
+                        Inyección en embarcaciones.</p>
                 </div>
             </div>
         </div>
     </div>
     <!--quienes-->
 
-    <div id="historia" data-scroll-id="historia">
-        <section class="portfolio-area section-gap">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="portfolio-main">
-                            <h1>Recent Portfolio <br> Showcase</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
-                            <a href="#" class="primary-btn">View all Works</a>
-                        </div>
+    <div id="galeria" data-scroll-id="galeria" class="bg-faded">
+        <section id="screenshots">
+            <div class="container pt90 pb90">
+                <div class="row">
+                    <div class="col-lg-8 ml-auto mr-auto mb60 wow fadeInUp" data-wow-delay=".1s"
+                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <h2 class="font300 text-center h1">Galería</h2>
+                        <p class="lead text-center">Nuestro trabajo en imágenes.</p>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="active-gallery-carousel owl-carousel owl-theme owl-loaded">
-
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                    style="transform: translate3d(-951.999px, 0px, 0px); transition: all 0s ease 0s; width: 2856px;">
-                                    <div class="owl-item cloned" style="width: 287.333px; margin-right: 30px;">
-                                        <div class="single-gallery">
-                                            <img class="img-fluid" src="img/1.jpg" alt="">
-                                            <div class="gallery-content">
-                                                <p>Casa blabla</p>
-                                                <h4>texto sobre la imagen</h4>
-                                            </div>
-                                            <div class="light-box">
-                                                <a href="img/1.jpg" class="img-popup">
-                                                    <span class="fas fa-link"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 287.333px; margin-right: 30px;">
-                                        <div class="single-gallery">
-                                            <img class="img-fluid" src="img/2.jpg" alt="">
-                                            <div class="gallery-content">
-                                                <p>Casa blabla</p>
-                                                <h4>texto sobre la imagen</h4>
-                                            </div>
-                                            <div class="light-box">
-                                                <a href="img/2.jpg" class="img-popup">
-                                                    <span class="fas fa-link"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 287.333px; margin-right: 30px;">
-                                        <div class="single-gallery">
-                                            <img class="img-fluid" src="img/3.jpg" alt="">
-                                            <div class="gallery-content">
-                                                <p>Casa blabla</p>
-                                                <h4>texto sobre la imagen</h4>
-                                            </div>
-                                            <div class="light-box">
-                                                <a href="img/3.jpg" class="img-popup">
-                                                    <span class="fas fa-link"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 287.333px; margin-right: 30px;">
-                                        <div class="single-gallery">
-                                            <img class="img-fluid" src="img/4.jpg" alt="">
-                                            <div class="gallery-content">
-                                                <p>Casa blabla</p>
-                                                <h4>texto sobre la imagen</h4>
-                                            </div>
-                                            <div class="light-box">
-                                                <a href="img/4.jpg" class="img-popup">
-                                                    <span class="fas fa-link"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 287.333px; margin-right: 30px;">
-                                        <div class="single-gallery">
-                                            <img class="img-fluid" src="img/5.jpg" alt="">
-                                            <div class="gallery-content">
-                                                <p>Casa blabla</p>
-                                                <h4>texto sobre la imagen</h4>
-                                            </div>
-                                            <div class="light-box">
-                                                <a href="img/5.jpg" class="img-popup">
-                                                    <span class="fas fa-link"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 287.333px; margin-right: 30px;">
-                                        <div class="single-gallery">
-                                            <img class="img-fluid" src="img/6.jpg" alt="">
-                                            <div class="gallery-content">
-                                                <p>Casa blabla</p>
-                                                <h4>texto sobre la imagen</h4>
-                                            </div>
-                                            <div class="light-box">
-                                                <a href="img/6.jpg" class="img-popup">
-                                                    <span class="fas fa-link"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 287.333px; margin-right: 30px;">
-                                        <div class="single-gallery">
-                                            <img class="img-fluid" src="img/7.jpg" alt="">
-                                            <div class="gallery-content">
-                                                <p>Casa blabla</p>
-                                                <h4>texto sobre la imagen</h4>
-                                            </div>
-                                            <div class="light-box">
-                                                <a href="img/7.jpg" class="img-popup">
-                                                    <span class="fas fa-link"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 287.333px; margin-right: 30px;">
-                                        <div class="single-gallery">
-                                            <img class="img-fluid" src="img/8.jpg" alt="">
-                                            <div class="gallery-content">
-                                                <p>Casa blabla</p>
-                                                <h4>texto sobre la imagen</h4>
-                                            </div>
-                                            <div class="light-box">
-                                                <a href="img/8.jpg" class="img-popup">
-                                                    <span class="fas fa-link"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-controls">
-                                <div class="owl-nav">
-                                    <div class="owl-prev"><img src="img/prev.png"></div>
-                                    <div class="owl-next"><img src="img/next.png"></div>
-                                </div>
-                                <div style="display: none;" class="owl-dots"></div>
-                            </div>
-                        </div>
+                </div>
+                <div class="owl-carousel owl-theme carousel-shots">
+                    <div class="item">
+                        <a href="img/2.jpg" data-lightbox="image-1"><img src="img/1.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/2.jpg" data-lightbox="image-1"><img src="img/2.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/2.jpg" data-lightbox="image-1"><img src="img/3.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/2.jpg" data-lightbox="image-1"><img src="img/4.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/5.jpg" data-lightbox="image-5"><img src="img/5.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/6.jpg" data-lightbox="image-6"><img src="img/6.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/7.jpg" data-lightbox="image-7"><img src="img/7.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/8.jpg" data-lightbox="image-8"><img src="img/8.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/9.jpg" data-lightbox="image-9"><img src="img/9.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/10.jpg" data-lightbox="image-10"><img src="img/10.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/11.jpg" data-lightbox="image-11"><img src="img/11.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/12.jpg" data-lightbox="image-12"><img src="img/12.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/13.jpg" data-lightbox="image-13"><img src="img/13.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/14.jpg" data-lightbox="image-14"><img src="img/14.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/15.jpg" data-lightbox="image-15"><img src="img/15.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/16.jpg" data-lightbox="image-16"><img src="img/16.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="item">
+                        <a href="img/17.jpg" data-lightbox="image-17"><img src="img/17.jpg" alt="" class="img-fluid"></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!--screen shots-->
     </div>
-    <!--historia-->
+    <!--galeria-->
 
     <div id="clientes" class="pt90 pb60 container">
         <h2 class="font300 h1 mb50 text-center">
@@ -283,7 +213,9 @@
         <div class="row">
             <div class="col-lg-6 mb30">
                 <div class="testimonail-card text-center">
-                    <p class="lead">En dicho cliente se le realizó un trabajo de aislamiento en los hornos con los cuales se cocinan los ladrillos terminando definitivamente con problemas de condensación que venían presentándose dentro de los mismos.</p>
+                    <p class="lead">En dicho cliente se le realizó un trabajo de aislamiento en los hornos con los
+                        cuales se cocinan los ladrillos terminando definitivamente con problemas de condensación que
+                        venían presentándose dentro de los mismos.</p>
                     <i class="far fa-building"></i>
                     <h5 class="font400 mb0">Ctibor</h5>
                     <em>cliente</em>
@@ -291,7 +223,9 @@
             </div>
             <div class="col-lg-6 mb30">
                 <div class="testimonail-card text-center">
-                    <p class="lead">En este caso particular nos tocó llevar a cabo la impermeabilización y aislamiento de toda la parte de los depósitos protegiendo de esta forma toda la mercadería que comercializa dicho cliente.</p>
+                    <p class="lead">En este caso particular nos tocó llevar a cabo la impermeabilización y aislamiento
+                        de toda la parte de los depósitos protegiendo de esta forma toda la mercadería que comercializa
+                        dicho cliente.</p>
                     <br>
                     <i class="fas fa-brush"></i>
                     <h5 class="font400 mb0">Security Hnos</h5>
@@ -301,6 +235,62 @@
         </div>
     </div>
     <!--clientes-->
+
+    <div id="producto" class="pt90 pb60 bg-faded" data-scroll-id="producto" tabindex="-1"
+    style="outline: currentcolor none medium;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 ml-auto mr-auto mb60 wow fadeInUp" data-wow-delay=".1s"
+                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h2 class="font300 text-center h1">Acerca de la Espuma de poliuretano</h2>
+                    <p class="lead text-center">¿Qué es y para qué sirve la espuma de poliuretano?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb40 wow fadeInUp" data-wow-delay=".1s">
+                    <div class="feature-icon cleafix">
+                        <i class="fas fa-spray-can text-primary"></i>
+                        <div class="oHidden">
+                            <h4>Qué es</h4>
+                            <p>El poliuretano es una sustancia creada a partir de una reacción química. Se trata de una combinación del poliol y del isocianato que hace que este material pueda moldearse y manejarse sin perder su fisiología.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb40 wow fadeInUp" data-wow-delay=".15s">
+                    <div class="feature-icon cleafix">
+                        <i class="fas fa-cloud text-primary"></i>
+                        <div class="oHidden">
+                            <h4>Características</h4>
+                            <p>El poliuretano se puede aplastar, rayar y estirar sin ningún problema, siendo un material tremendamente resistente que puede emplearse en formato sólido, líquido o en espuma. En el caso que nos ocupa se utiliza en su estado líquido y tras aplicarse tiende a expandirse hasta adquirir su forma sólida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb40 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="feature-icon cleafix">
+                        <i class="fas fa-fire-extinguisher text-primary"></i>
+                        <div class="oHidden">
+                            <h4>Propiedades</h4>
+                            <p>Cuenta con multitud de propiedades que funcionan muy bien en el sector de la construcción: aislante hidrófugo, aislante térmico y como material antihumedad.<br>
+                                De esa manera, la espuma de poliuretano actúa como puente térmico y, además de robustecer la estructura, elimina la transmisión del frío y del calor. Esto supone un ahorro considerable en materia de refrigeración y calefacción.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb40 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="feature-icon cleafix">
+                        <i class="fas fa-water text-primary"></i>
+                        <div class="oHidden">
+                            <h4>Extras</h4>
+                            <p>Además, su estructura es resistente al agua, por eso es perfecta para todo tipo de estructuras, ya sean irregulares o que muestren imperfecciones. Así, la espuma de poliuretano evita las filtraciones y protege contra la corrosión.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--producto-->
+
 
     <div id="contacto" class="pt90 pb60 container subsribe-section">
         <div class="container">
@@ -320,7 +310,8 @@
                             <option>motivo 1</option>
                             <option>motivo 2</option>
                         </select>
-                        <textarea rows="2" class="form-control" placeholder="Comentario" id="comentario" required data-validation-required-message="Envie sus comentarios"></textarea>
+                        <textarea rows="2" class="form-control" placeholder="Comentario" id="comentario" required
+                            data-validation-required-message="Envie sus comentarios"></textarea>
                         <button type="submit" class="btn btn-primary btn-block">Enviar</button>
                     </form>
                     <div class="row mt-4">
@@ -334,17 +325,21 @@
                                     <i class="fab fa-whatsapp"></i>
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
-                                <a href="mailto:purtermica@gmail.com" class="social-icon si-dark si-colored-google-plus">
+                                <a href="mailto:purtermica@gmail.com"
+                                    class="social-icon si-dark si-colored-google-plus">
                                     <i class="far fa-envelope"></i>
                                     <i class="far fa-envelope"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.5781754511327!2d-57.986745884762605!3d-34.89193738038578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e70cd5f00dc7%3A0xf5fc5f7882b987c!2sAv.%20520%201365%2C%20B1906BTC%20Ringuelet%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1612400673844!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.5781754511327!2d-57.986745884762605!3d-34.89193738038578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e70cd5f00dc7%3A0xf5fc5f7882b987c!2sAv.%20520%201365%2C%20B1906BTC%20Ringuelet%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1612400673844!5m2!1ses-419!2sar"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
@@ -355,7 +350,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 ml-auto mr-auto">
-                    <img src="img/logo.jpg" alt="" class="img-fluid mb10">
+                   <img src="img/logo.jpg" alt="" class="img-fluid mb10">
                 </div>
                 <div class="col-lg-4 mr-auto ml-auto">
                     <h4>Links útiles</h4>
@@ -377,19 +372,21 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.showYtVideo.js"></script>
     <script>
-    jQuery(document).ready(function ($) {
-        $('.show-modal').on('click', function () {
-            $.showYtVideo({
-                videoId: 'zVqj87bzte0'
+        jQuery(document).ready(function ($) {
+            $('.show-modal').on('click', function () {
+                $.showYtVideo({
+                    videoId: 'zVqj87bzte0'
+                });
             });
         });
-    });
     </script>
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
-        <script src="js/plugins.js"></script>
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/owl.js"></script>
-        <script src="js/minimal-flat.js"></script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/lightbox.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/mobileApp.custom.js"></script>
+    <script src="js/minimal-flat.js"></script>
+    <script src="js/plugins2.js"></script>
 
 </body>
 

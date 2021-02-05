@@ -5,11 +5,11 @@ $dark-color: #283339;
 
 @import '../css/imported.css';
 @import '../scss/_mixins.scss';
-@import '../scss/_owl.scss';
 
 .text-orange {
     color: $secondary-color;
 }
+
 .navbar-brand {
     display: inline-flex;
     h1 {
@@ -52,6 +52,10 @@ $dark-color: #283339;
     }
 }
 
+.bg-faded {
+    background: #f2f3f7 !important;
+}
+
 .si-colored-whatsapp {
     background-color: #25d366;
 }
@@ -68,3 +72,70 @@ $dark-color: #283339;
     background: #25d366 !important;
     bottom: 10px;
 }
+
+.item img {
+    max-width: 232px;
+    min-height: 410px;
+    object-fit: cover;
+}
+/*
+Cards features,  icons, images, teams etc.
+*/
+.feature-icon i {
+    font-size: 44px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 1.5rem; }
+  
+  .feature-icon h4 {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600; }
+    .feature-icon h4:after {
+      content: "";
+      width: 40px;
+      height: 3px;
+      background-color:  $secondary-color;
+      position: absolute;
+      left: 0;
+      margin-left: 0;
+      bottom: 0; }
+  
+  .feature-img {
+    max-width: 500px;
+    position: absolute; }
+    .feature-img.img-right {
+      right: 0; }
+    .feature-img.img-left {
+      left: 0; }
+  
+  .feature-list li {
+    padding-left: 30px;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 1rem; }
+    .feature-list li:before {
+      content: "\e959";
+      font-family: 'Linearicons';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1rem; }
+  
+  @media (min-width: 992px) {
+    .feature-img-section {
+      position: relative; }
+    .feature-img {
+      position: absolute;
+      max-width: 600px; }
+      .feature-img.pos-left {
+        left: 0; }
+      .feature-img.pos-right {
+        right: 0; } }
+  

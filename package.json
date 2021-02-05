@@ -13,6 +13,8 @@
     "gulp-sass": "^4.1.0",
     "node-sass": "^5.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lightbox2": "^2.11.3"
+  },
   "description": ""
 }
