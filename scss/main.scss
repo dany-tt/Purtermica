@@ -6,6 +6,11 @@ $dark-color: #283339;
 @import '../css/imported.css';
 @import '../scss/_mixins.scss';
 
+#home {
+    height: 100vh;
+    padding-top: 6.5rem;
+}
+
 .text-orange {
     color: $secondary-color;
 }
@@ -14,7 +19,21 @@ $dark-color: #283339;
     display: inline-flex;
     h1 {
         color: #fff;
-        margin: .5rem 0 0 1rem
+        margin: 0 0 0 1rem;
+        font-size: 2.3rem;
+        @media all and (max-width: 767px) {
+            font-size: 30px !important;
+            margin: 1rem 0 0 1rem;
+        }
+    }
+    img {
+        @media all and (max-width: 767px) {
+            max-width: 50px;
+            height: 100%;
+            margin-top: .8rem;
+        }
+        height: 54px;
+        width: 60px;
     }
 }
 
@@ -36,12 +55,28 @@ $dark-color: #283339;
         color: #fff;
         font-size: 32px;
     }
-
-    .navbar-brand img {
-        max-width: 50px;
-        height: 100%;
-        margin-top: .8rem;
+    
+    .navbar .container {
+        flex-direction: row-reverse;
     }
+
+    .btn.btn-primary {
+        background: unset;
+        text-align: left;
+        font-size: 14px;
+        text-transform: capitalize !important;
+        color: #999 !important;
+    }
+
+    .navbar.navbar-expand-lg .navbar-collapse {
+        min-height: 265px;
+        overflow-y: auto;
+    }
+
+    .social {
+        margin-bottom: 4rem;
+    }
+
 }
 
 .footer {
@@ -59,6 +94,7 @@ $dark-color: #283339;
 .si-colored-whatsapp {
     background-color: #25d366;
 }
+
 .custom-checkbox .custom-control-indicator::before {
     content: '\f00c';
     font-family: 'FontAwesome';
@@ -68,6 +104,7 @@ $dark-color: #283339;
     font-size: 40px;
     color: $secondary-color;
 }
+
 .back-to-top-social {
     background: #25d366 !important;
     bottom: 10px;
@@ -78,9 +115,7 @@ $dark-color: #283339;
     min-height: 410px;
     object-fit: cover;
 }
-/*
-Cards features,  icons, images, teams etc.
-*/
+
 .feature-icon i {
     font-size: 44px;
     display: block;

@@ -3,6 +3,10 @@
 /* Tablet Layout: 768px */
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
+#home {
+  height: 100vh;
+  padding-top: 6.5rem; }
+
 .text-orange {
   color: #f77014; }
 
@@ -10,7 +14,20 @@
   display: inline-flex; }
   .navbar-brand h1 {
     color: #fff;
-    margin: .5rem 0 0 1rem; }
+    margin: 0 0 0 1rem;
+    font-size: 2.3rem; }
+    @media all and (max-width: 767px) {
+      .navbar-brand h1 {
+        font-size: 30px !important;
+        margin: 1rem 0 0 1rem; } }
+  .navbar-brand img {
+    height: 54px;
+    width: 60px; }
+    @media all and (max-width: 767px) {
+      .navbar-brand img {
+        max-width: 50px;
+        height: 100%;
+        margin-top: .8rem; } }
 
 .bg-dark {
   background-color: #283339 !important; }
@@ -26,10 +43,19 @@
     font-family: 'FontAwesome';
     color: #fff;
     font-size: 32px; }
-  .navbar-brand img {
-    max-width: 50px;
-    height: 100%;
-    margin-top: .8rem; } }
+  .navbar .container {
+    flex-direction: row-reverse; }
+  .btn.btn-primary {
+    background: unset;
+    text-align: left;
+    font-size: 14px;
+    text-transform: capitalize !important;
+    color: #999 !important; }
+  .navbar.navbar-expand-lg .navbar-collapse {
+    min-height: 265px;
+    overflow-y: auto; }
+  .social {
+    margin-bottom: 4rem; } }
 
 .footer {
   color: #fff; }
@@ -61,9 +87,6 @@
   -o-object-fit: cover;
      object-fit: cover; }
 
-/*
-Cards features,  icons, images, teams etc.
-*/
 .feature-icon i {
   font-size: 44px;
   display: block;
