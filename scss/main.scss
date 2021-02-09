@@ -63,11 +63,12 @@ $dark-color: #283339;
     }
 
     .btn.btn-primary {
-        background: unset;
-        text-align: left;
+        //background: unset;
+        //text-align: left;
         font-size: 14px;
         text-transform: capitalize !important;
-        color: #999 !important;
+        color: #fff !important;
+        padding: .5rem 1rem;
     }
 
     .navbar.navbar-expand-lg .navbar-collapse {

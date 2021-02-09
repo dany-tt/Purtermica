@@ -48,11 +48,10 @@
   .navbar .container {
     flex-direction: row-reverse; }
   .btn.btn-primary {
-    background: unset;
-    text-align: left;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: capitalize !important;
-    color: #999 !important; }
+    color: #fff !important;
+    padding: .5rem 1rem; }
   .navbar.navbar-expand-lg .navbar-collapse {
     min-height: 265px;
     overflow-y: auto; }
