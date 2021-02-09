@@ -8,7 +8,9 @@ $dark-color: #283339;
 
 #home {
     height: 100vh;
-    padding-top: 6.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .text-orange {
@@ -173,4 +175,6 @@ $dark-color: #283339;
         left: 0; }
       .feature-img.pos-right {
         right: 0; } }
-  
+  .error {
+    color: $primary-color;
+  }

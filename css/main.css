@@ -5,7 +5,9 @@
 /* Wide Mobile Layout: 480px */
 #home {
   height: 100vh;
-  padding-top: 6.5rem; }
+  display: flex;
+  align-content: center;
+  justify-content: center; }
 
 .text-orange {
   color: #f77014; }
@@ -148,3 +150,6 @@
     left: 0; }
   .feature-img.pos-right {
     right: 0; } }
+
+.error {
+  color: #ec2f11; }

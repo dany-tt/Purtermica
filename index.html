@@ -13,8 +13,20 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/showYtVideo.css" rel="stylesheet" type="text/css">
     <link href="css/lightbox.css" rel="stylesheet" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-        defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH-Oh3Hk9TNM2CLS4B8tEFoOQDf2n5lXs&callback=initMap&libraries=&v=weekly"
+    defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBDKJC1REP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JBDKJC1REP');
+    </script>
 
 </head>
 
@@ -94,13 +106,14 @@
             <div class="hero-inner">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-6 ml-auto mr-auto text-center pb50">
+                        <div class="ml-auto mr-auto text-center pb50">
                             <h5 class="text-white font400 text-uppercase"></h5>
                             <h3 class="mb20 text-white title-font text-capitalize h1">Bienvenidos a Purtermica</h3>
                             <p class="text-white-gray mb30 lead">Empresa líder en aislamiento termo hidrófugo con poliuretano expandido.<br>
                                 Acá podrás conocer un poco más sobre nuestros trabajos.</p>
                             <div>
-                                <button data-scroll class="btn btn-primary show-modal mr-3"><i class="fa fa-play"></i>Ver video</a>
+<!--                                 <button data-scroll class="btn btn-primary show-modal mr-3"><i class="fa fa-play"></i>Seguínos en nuestro canal de YouTube</button>
+ -->                                <a href="https://www.youtube.com/channel/UCenpIc6yW9cdj5NXw4M0SwQ/videos" class="btn btn-primary mr-3 mt-2" target="_blank"><i class="fa fa-play"></i>Seguínos en nuestro canal de YouTube </a>
                             </div>
                         </div>
                     </div>
@@ -319,20 +332,29 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <h2 class="font300 h1 mb20 text-left">
-                                Suscríbase para recibir novedades de nuestros servicios
+                                Contactate con nosotros.
                             </h2>
                         </div>
                     </div>
-                    <form name="enviarMensaje" id="contactForm" method="post" novalidate>
-                        <input type="nombre" class="form-control" placeholder="Nombre" required="">
-                        <input type="email" class="form-control" placeholder="Email" required="">
-                        <select type="motivo" class="form-control" placeholder="motivo" required="">
-                            <option>motivo 1</option>
-                            <option>motivo 2</option>
+                    <form name="enviarMensaje" id="contactForm" action="#">
+                        <input id="nombre" type="nombre" class="form-control" placeholder="Nombre" required>
+                        <p class="error"><i class="fas fa-exclamation-circle"></i> Mensaje de error</p>
+                        <input id="email" type="email" class="form-control" placeholder="Email" required>
+                        <p class="error"><i class="fas fa-exclamation-circle"></i> Mensaje de error</p>
+                        <select id="motivo" type="motivo" class="form-control" placeholder="Motivo" required="">
+                            <option value="CONSULTA">CONSULTA</option>                            
+                            <option value="PRESUPUESTO">PRESUPUESTO</option>
+                            <option value="RECLAMO">RECLAMO</option>
                         </select>
-                        <textarea rows="2" class="form-control" placeholder="Comentario" id="comentario" required
+                        <textarea id="comentario" rows="2" class="form-control" placeholder="Comentario" id="comentario" required
                             data-validation-required-message="Envie sus comentarios"></textarea>
-                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                            <p class="error"><i class="fas fa-exclamation-circle"></i> Mensaje de error</p>
+                        <div class="g-recaptcha" 
+                            data-sitekey="6Lfeu0waAAAAANz1Rr_YmZ-0RFr39vfRvFmlOxGQ"                            
+                            data-callback="formSubmit">                        
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary btn-block" onclick="enviarDatos()">Enviar</button> -->
+                        <button type="submit" class="btn btn-primary btn-block mt-4" >Enviar</button>
                     </form>
                     <div class="row mt-4">
                         <div class="col-lg-12">
@@ -341,7 +363,7 @@
                                     <i class="fa fa-facebook"></i>
                                     <i class="fa fa-facebook"></i>
                                 </a>
-                                <a href="https://wa.me/2215639908" class="social-icon si-dark si-colored-whatsapp">
+                                <a href="https://wa.me/5492215639908" class="social-icon si-dark si-colored-whatsapp">
                                     <i class="fab fa-whatsapp"></i>
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
@@ -406,6 +428,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/mobileApp.custom.js"></script>
     <script src="js/minimal-flat.js"></script>
+    <script src="js/sendmail.js"></script>
     <!-- <script src="js/plugins2.js"></script> -->
 
 </body>
