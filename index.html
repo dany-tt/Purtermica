@@ -338,9 +338,7 @@
                     </div>
                     <form name="enviarMensaje" id="contactForm" action="#">
                         <input id="nombre" type="nombre" class="form-control" placeholder="Nombre" required>
-                        <p class="error"><i class="fas fa-exclamation-circle"></i> Mensaje de error</p>
                         <input id="email" type="email" class="form-control" placeholder="Email" required>
-                        <p class="error"><i class="fas fa-exclamation-circle"></i> Mensaje de error</p>
                         <select id="motivo" type="motivo" class="form-control" placeholder="Motivo" required="">
                             <option value="CONSULTA">CONSULTA</option>                            
                             <option value="PRESUPUESTO">PRESUPUESTO</option>
@@ -348,11 +346,16 @@
                         </select>
                         <textarea id="comentario" rows="2" class="form-control" placeholder="Comentario" id="comentario" required
                             data-validation-required-message="Envie sus comentarios"></textarea>
-                            <p class="error"><i class="fas fa-exclamation-circle"></i> Mensaje de error</p>
                         <div class="g-recaptcha" 
                             data-sitekey="6Lfeu0waAAAAANz1Rr_YmZ-0RFr39vfRvFmlOxGQ"                            
                             data-callback="formSubmit">                        
                         </div>
+                        <div class="alert alert-danger" role="alert">
+                            <i class="fas fa-exclamation-circle"></i> Mensaje de error
+                          </div>
+                          <div class="alert alert-success" role="alert">
+                            <i class="fas fa-exclamation-circle"></i> Mensaje de éxito
+                          </div>
                         <!-- <button type="submit" class="btn btn-primary btn-block" onclick="enviarDatos()">Enviar</button> -->
                         <button type="submit" class="btn btn-primary btn-block mt-4" >Enviar</button>
                     </form>

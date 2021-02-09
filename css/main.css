@@ -153,3 +153,6 @@
 
 .error {
   color: #ec2f11; }
+
+.alert {
+  display: none; }
