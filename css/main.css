@@ -4,10 +4,15 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 #home {
-  height: 100vh;
   display: flex;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 95%;
+  background-color: #283339;
+  background-image: url("img/12.jpg"); }
+
+p {
+  margin-bottom: 0; }
 
 .text-orange {
   color: #f77014; }
@@ -37,6 +42,11 @@
 .bg-dark, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: #fff; }
 
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  border-color: transparent;
+  background-color: #ec2f11;
+  box-shadow: none; }
+
 @media (max-width: 991px) {
   .navbar.navbar-light.navbar-transparent.bg-dark, .navbar.navbar-light.navbar-transparent.bg-dark.fixed-top {
     background-color: #283339 !important; }
@@ -45,13 +55,39 @@
     font-family: 'FontAwesome';
     color: #fff;
     font-size: 32px; }
+  .navbar {
+    padding: .5rem 2rem .5rem 1rem; }
   .navbar .container {
     flex-direction: row-reverse; }
   .btn.btn-primary {
-    font-size: 13px;
-    text-transform: capitalize !important;
-    color: #fff !important;
+    font-size: 14px;
     padding: .5rem 1rem; }
+  .navbar.navbar-light .nav-link.btn {
+    color: rgba(0, 0, 0, 0.5); }
+  .nav-link.btn.btn-primary {
+    background: unset;
+    text-align: left;
+    font-size: 16px;
+    color: #999;
+    padding: .5rem 0;
+    padding-right: 0;
+    padding-left: 0;
+    box-shadow: none;
+    text-transform: capitalize !important; }
+    .nav-link.btn.btn-primary:hover, .nav-link.btn.btn-primary:active, .nav-link.btn.btn-primary:focus {
+      box-shadow: none;
+      transform: none;
+      color: #fff;
+      background-color: none; }
+    .nav-link.btn.btn-primary:hover {
+      color: #fff; }
+    .nav-link.btn.btn-primary.active {
+      color: #ec2f11 !important; }
+  .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: none; }
+  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    border-color: transparent;
+    background-color: transparent; }
   .navbar.navbar-expand-lg .navbar-collapse {
     min-height: 265px;
     overflow-y: auto; }
@@ -84,7 +120,7 @@
 
 .item img {
   max-width: 232px;
-  min-height: 410px;
+  height: 290px;
   -o-object-fit: cover;
      object-fit: cover; }
 

@@ -80,27 +80,7 @@
     </nav>
     <!--navbar-->
 
-    <!--<div id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 ml-auto pb50">
-                    <h2 class="mb20 h1 font300">Bienvenidos a Purtermica</h2>
-                    <div class="clearfix">
-                        <p class="lead">Empresa líder en aislamiento termo hidrófugo con poliuretano expandido.<br>
-                            Acá podrás conocer un poco más sobre nuestros trabajos.</p>
-                        <button class="btn btn-primary mr-3 mb-2 show-modal">
-                            <i class="fa fa-play"></i>Ver video</button>
-                    </div>
-                </div>
-                <div class="col-lg-5 mr-auto pb60">
-                   <img src="img/ceeling.svg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    home-->
-
-    <div id="home" class="hero-section" data-jarallax-video="https://www.youtube.com/watch?v=zVqj87bzte0" data-jarallax-original-styles="null">
+    <div id="home" data-scroll-id="home" class="hero-section" data-jarallax-video="https://www.youtube.com/watch?v=zVqj87bzte0" data-jarallax-original-styles="null">
         <div class="parallax-overlay"></div>
         <div class="hero-content">
             <div class="hero-inner">
@@ -122,11 +102,11 @@
         </div>
     </div><!--hero-->
 
-    <div id="quienes" class="pt90 pb60" data-scroll-id="quienes" tabindex="-1"
+    <div id="quienes" data-scroll-id="quienes" class="pt40 pb30"
         style="outline: currentcolor none medium;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 ml-auto mr-auto mb60 wow fadeInUp" data-wow-delay=".1s"
+                <div class="col-lg-8 ml-auto mr-auto mb30 wow fadeInUp" data-wow-delay=".1s"
                     style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                     <h2 class="font300 text-center h1">Quiénes Sómos</h2>
                     <p class="lead text-center">Somos una empresa con más de 15 años de trayectoria dedicados al
@@ -172,11 +152,11 @@
     </div>
     <!--quienes-->
 
-    <div id="galeria" data-scroll-id="galeria" class="bg-faded pt90 pb90">
+    <div id="galeria" data-scroll-id="galeria" class="pt40 pb30 bg-faded">
         <section id="screenshots">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 ml-auto mr-auto mb60 wow fadeInUp" data-wow-delay=".1s"
+                    <div class="col-lg-8 ml-auto mr-auto mb30 wow fadeInUp" data-wow-delay=".1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <h2 class="font300 text-center h1">Galería</h2>
                         <p class="lead text-center">Nuestro trabajo en imágenes.</p>
@@ -240,29 +220,29 @@
     </div>
     <!--galeria-->
 
-    <div id="clientes" class="pt90 pb60 container">
-        <h2 class="font300 h1 mb50 text-center">
+    <div id="clientes" data-scroll-id="clientes" class="pt40 pb30 container">
+        <h2 class="font300 h1 mb30 text-center">
             Nuestros Clientes nos recomiendan
         </h2>
         <div class="row">
             <div class="col-lg-6 mb30">
                 <div class="testimonail-card text-center">
-                    <p class="lead">En dicho cliente se le realizó un trabajo de aislamiento en los hornos con los
+                    <p class="lead mb30">En dicho cliente se le realizó un trabajo de aislamiento en los hornos con los
                         cuales se cocinan los ladrillos terminando definitivamente con problemas de condensación que
                         venían presentándose dentro de los mismos.</p>
                     <i class="far fa-building"></i>
-                    <h5 class="font400 mb0">Ctibor</h5>
+                    <h5 class="font400 mb0 mt20">Ctibor</h5>
                     <em>cliente</em>
                 </div>
             </div>
             <div class="col-lg-6 mb30">
                 <div class="testimonail-card text-center">
-                    <p class="lead">En este caso particular nos tocó llevar a cabo la impermeabilización y aislamiento
+                    <p class="lead mb30">En este caso particular nos tocó llevar a cabo la impermeabilización y aislamiento
                         de toda la parte de los depósitos protegiendo de esta forma toda la mercadería que comercializa
                         dicho cliente.</p>
                     <br>
                     <i class="fas fa-brush"></i>
-                    <h5 class="font400 mb0">Security Hnos</h5>
+                    <h5 class="font400 mb0 mt20">Security Hnos</h5>
                     <em>cliente</em>
                 </div>
             </div>
@@ -270,7 +250,7 @@
     </div>
     <!--clientes-->
 
-    <div id="producto" class="pt90 pb60 bg-faded" data-scroll-id="producto" tabindex="-1"
+    <div id="producto" data-scroll-id="producto" class="pt40 pb30 bg-faded"
     style="outline: currentcolor none medium;">
         <div class="container">
             <div class="row">
@@ -325,7 +305,7 @@
     </div>
     <!--producto-->
 
-    <div id="contacto" class="pt90 pb60 container subsribe-section">
+    <div id="contacto"  data-scroll-id="contacto" class="pt40 pb30 container subsribe-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -414,24 +394,11 @@
     <a href="#" class="back-to-top" id="back-to-top"><i class="fas fa-chevron-up"></i></a>
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/jquery.showYtVideo.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.show-modal').on('click', function () {
-                $.showYtVideo({
-                    videoId: 'zVqj87bzte0'
-                });
-            });
-        });
-    </script>
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/lightbox.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/mobileApp.custom.js"></script>
     <script src="js/minimal-flat.js"></script>
     <script src="js/sendmail.js"></script>
-    <!-- <script src="js/plugins2.js"></script> -->
 
 </body>
 
