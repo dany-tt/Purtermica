@@ -60,7 +60,7 @@ p {
   .navbar .container {
     flex-direction: row-reverse; }
   .btn.btn-primary {
-    font-size: 14px;
+    font-size: 12px;
     padding: .5rem 1rem; }
   .navbar.navbar-light .nav-link.btn {
     color: rgba(0, 0, 0, 0.5); }
