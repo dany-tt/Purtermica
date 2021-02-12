@@ -4,12 +4,36 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 #home {
-  display: flex;
-  align-content: center;
-  justify-content: center;
   height: 95%;
   background-color: #283339;
-  background-image: url("img/12.jpg"); }
+  background: url("http://purtermica.com.ar/img/12.jpg") top center no-repeat;
+  background-size: contain;
+  padding-top: 100px !important; }
+  @media (max-width: 991px) {
+    #home {
+      height: 100%; } }
+
+.hero-section {
+  padding-top: unset; }
+  @media (max-width: 991px) {
+    .hero-section {
+      padding-top: 100px !important; } }
+
+.hero-content {
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  @media (max-width: 991px) {
+    .hero-content {
+      display: unset; } }
+
+#clientes, #producto, #contacto, #galeria, #quienes, #galeria {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (max-width: 991px) {
+    #clientes, #producto, #contacto, #galeria, #quienes, #galeria {
+      padding-top: 60px;
+      padding-bottom: 90px; } }
 
 p {
   margin-bottom: 0; }

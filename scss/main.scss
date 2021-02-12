@@ -7,14 +7,40 @@ $dark-color: #283339;
 @import '../scss/_mixins.scss';
 
 #home {
+    height: 95%;
+    background-color: $dark-color;
+    background: url("http://purtermica.com.ar/img/12.jpg") top center no-repeat;
+    background-size: contain;
+    padding-top: 100px !important;
+    @media (max-width: 991px) {
+        height: 100%;
+    }
+}
+
+.hero-section {
+    padding-top: unset;
+    @media (max-width: 991px) {
+        padding-top: 100px !important;
+    }
+}
+
+.hero-content {
     display: flex;
     align-content: center;
     justify-content: center;
-    height: 95%;
-    background-color: $dark-color;
-    background-image: url("img/12.jpg");
+    @media (max-width: 991px) {
+        display: unset;
+    }
 }
 
+#clientes, #producto, #contacto, #galeria, #quienes, #galeria {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (max-width: 991px) {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+}
 
 p {
     margin-bottom: 0;
