@@ -8,31 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Purtermic</title>
     <!-- Plugins CSS -->
-    <script src="https://kit.fontawesome.com/753b380db6.js" crossorigin="anonymous"></script>
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/showYtVideo.css" rel="stylesheet" type="text/css">
     <link href="css/lightbox.css" rel="stylesheet" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH-Oh3Hk9TNM2CLS4B8tEFoOQDf2n5lXs&callback=initMap&libraries=&v=weekly"
-    defer></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBDKJC1REP"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-JBDKJC1REP');
-    </script>
-
 </head>
 
 <body data-spy="scroll" data-offset="88" data-target="#navbarlanding">
-    <!--/preloader-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-sticky navbar-transparent">
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div><!--/preloader-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded navbar-sticky navbar-transparent">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarlanding" aria-controls="navbarlanding" aria-expanded="false"
@@ -47,33 +34,23 @@
             <div class="collapse navbar-collapse" id="navbarlanding">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" data-scroll="" href="#home">Home</a>
+                        <a class="nav-link active" data-scroll="#home" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll="" href="#quienes">Quiénes Sómos</a>
+                        <a class="nav-link" data-scroll="#quienes" href="#quienes">Quiénes Sómos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll="" href="#galeria">Galeria</a>
+                        <a class="nav-link" data-scroll="#galeria" href="#galeria">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll="" href="#clientes">Clientes</a>
+                        <a class="nav-link" data-scroll="#clientes" href="#clientes">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll="" href="#producto">Producto</a>
+                        <a class="nav-link" data-scroll="#producto" href="#producto">Producto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary" data-scroll="" href="#contacto">Contacto</a>
+                        <a class="nav-link btn btn-primary" data-scroll="#contacto" href="#contacto">Contacto</a>
                     </li>
-                    <!--                     <li class="nav-item dropdown">
-                        <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            más links...
-                        </span>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link2</a>
-                        </div>
-                    </li> -->
                 </ul>
             </div>
         </div>
@@ -390,6 +367,23 @@
 
     <!--back to top  -->
     <a href="#" class="back-to-top" id="back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH-Oh3Hk9TNM2CLS4B8tEFoOQDf2n5lXs&callback=initMap&libraries=&v=weekly"
+    defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBDKJC1REP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JBDKJC1REP');
+    </script>
+
+    <script src="https://kit.fontawesome.com/753b380db6.js" crossorigin="anonymous"></script>
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/lightbox.js"></script>

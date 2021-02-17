@@ -7,25 +7,25 @@ $dark-color: #283339;
 @import '../scss/_mixins.scss';
 
 #home {
-    height: 95%;
+    height: 100%;
     background-color: $dark-color;
     display: flex;
     justify-content: center;
     align-content: center;
     @media (max-width: 991px) {
-        height: 100%;
         background: url("http://purtermica.com.ar/img/12.jpg") top center no-repeat;
         background-size: cover;
     }
 }
 
-
 .hero-content {
     display: flex;
     align-content: center;
     justify-content: center;
+
     @media (max-width: 991px) {
         display: unset;
+        padding-top: 100px;
     }
 }
 
@@ -33,7 +33,7 @@ $dark-color: #283339;
     padding-top: 30px;
     padding-bottom: 30px;
     @media (max-width: 991px) {
-        padding-top: 90px;
+        padding-top: 70px;
         padding-bottom: 60px;
     }
 }
@@ -54,14 +54,13 @@ p {
         font-size: 2.3rem;
         @media all and (max-width: 767px) {
             font-size: 30px !important;
-            margin: 1rem 0 0 1rem;
+            margin: .4rem 0 0 1rem;
         }
     }
     img {
         @media all and (max-width: 767px) {
             max-width: 50px;
             height: 100%;
-            margin-top: .8rem;
         }
         height: 54px;
         width: 60px;
@@ -86,7 +85,7 @@ p {
     .navbar.navbar-light.navbar-transparent.bg-dark, .navbar.navbar-light.navbar-transparent.bg-dark.fixed-top {
         background-color: $dark-color !important;
     }
-    .navbar.navbar-light.navbar-transparent.bg-dark .navbar-toggler .navbar-toggler-icon:after, .navbar.navbar-light.navbar-transparent.bg-dark.fixed-top .navbar-toggler .navbar-toggler-icon:after {
+    .navbar-toggler .navbar-toggler-icon:after, .navbar-toggler .navbar-toggler-icon:after {
         content: "\f0c9";
         font-family: 'FontAwesome';
         color: #fff;
@@ -95,10 +94,7 @@ p {
     .navbar {
        padding: .5rem 2rem .5rem 1rem;
     }
-    
-    .navbar .container {
-        flex-direction: row-reverse;
-    }
+
 
     .btn.btn-primary {
         font-size: 12px;
@@ -159,7 +155,7 @@ p {
 }
 
 .bg-faded {
-    background: #f2f3f7 !important;
+    background: #f2f3f7;
 }
 
 .si-colored-whatsapp {

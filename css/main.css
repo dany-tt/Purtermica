@@ -4,14 +4,13 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 #home {
-  height: 95%;
+  height: 100%;
   background-color: #283339;
   display: flex;
   justify-content: center;
   align-content: center; }
   @media (max-width: 991px) {
     #home {
-      height: 100%;
       background: url("http://purtermica.com.ar/img/12.jpg") top center no-repeat;
       background-size: cover; } }
 
@@ -21,14 +20,15 @@
   justify-content: center; }
   @media (max-width: 991px) {
     .hero-content {
-      display: unset; } }
+      display: unset;
+      padding-top: 100px; } }
 
 #clientes, #producto, #contacto, #galeria, #quienes, #galeria {
   padding-top: 30px;
   padding-bottom: 30px; }
   @media (max-width: 991px) {
     #clientes, #producto, #contacto, #galeria, #quienes, #galeria {
-      padding-top: 90px;
+      padding-top: 70px;
       padding-bottom: 60px; } }
 
 p {
@@ -46,15 +46,14 @@ p {
     @media all and (max-width: 767px) {
       .navbar-brand h1 {
         font-size: 30px !important;
-        margin: 1rem 0 0 1rem; } }
+        margin: .4rem 0 0 1rem; } }
   .navbar-brand img {
     height: 54px;
     width: 60px; }
     @media all and (max-width: 767px) {
       .navbar-brand img {
         max-width: 50px;
-        height: 100%;
-        margin-top: .8rem; } }
+        height: 100%; } }
 
 .bg-dark {
   background-color: #283339 !important; }
@@ -70,15 +69,13 @@ p {
 @media (max-width: 991px) {
   .navbar.navbar-light.navbar-transparent.bg-dark, .navbar.navbar-light.navbar-transparent.bg-dark.fixed-top {
     background-color: #283339 !important; }
-  .navbar.navbar-light.navbar-transparent.bg-dark .navbar-toggler .navbar-toggler-icon:after, .navbar.navbar-light.navbar-transparent.bg-dark.fixed-top .navbar-toggler .navbar-toggler-icon:after {
+  .navbar-toggler .navbar-toggler-icon:after, .navbar-toggler .navbar-toggler-icon:after {
     content: "\f0c9";
     font-family: 'FontAwesome';
     color: #fff;
     font-size: 32px; }
   .navbar {
     padding: .5rem 2rem .5rem 1rem; }
-  .navbar .container {
-    flex-direction: row-reverse; }
   .btn.btn-primary {
     font-size: 12px;
     padding: .5rem 1rem; }
@@ -121,7 +118,7 @@ p {
     height: 30px; }
 
 .bg-faded {
-  background: #f2f3f7 !important; }
+  background: #f2f3f7; }
 
 .si-colored-whatsapp {
   background-color: #25d366; }

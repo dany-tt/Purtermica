@@ -1,8 +1,12 @@
 /*
 Project - Classic landing onepage template
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700");
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 /*
 Basic of template
@@ -14,14 +18,14 @@ body {
   color: #666666;
   font-weight: 400;
   letter-spacing: 0.5px;
-  font-family: "Lato", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: .9rem;
   line-height: 1.85714286em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 button, input, optgroup, select, textarea {
-  font-family: "Lato", sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 button:focus {
   outline: 0 !important; }
@@ -31,7 +35,7 @@ a, .simple-hover img, button, .btn {
   -webkit-transition: all 0.3s; }
 
 a {
-  color: #ec2f11;
+  color: #75a6f0;
   text-decoration: none; }
   a:hover, a:focus {
     text-decoration: none;
@@ -51,16 +55,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Dosis", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #252525;
   font-weight: 500;
   font-variant-ligatures: common-ligatures;
   margin-top: 0; }
-
-.title-font {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 42px; }
 
 h1,
 .h1 {
@@ -133,7 +132,7 @@ h6,
   padding: 10px 15px; }
 
 .base-font {
-  font-family: "Lato", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 300; }
 
 .font300 {
@@ -159,18 +158,18 @@ small {
     color: #fff; }
 
 .bg-faded {
-  background-color: #283339; }
+  background-color: rgba(117, 166, 240, 0.03); }
 
 .badge-default {
   background-color: #f5f5f5 !important;
   color: #999; }
 
 .badge-primary {
-  background: #ec2f11 !important; }
+  background: #75a6f0 !important; }
 
 .bg-primary {
-  background: #ec2f11 !important;
-  border-color: #ec2f11; }
+  background: #75a6f0 !important;
+  border-color: #75a6f0; }
 
 .bg-success {
   background: #5cb85c !important;
@@ -196,7 +195,7 @@ small {
   background: #fff; }
 
 .text-primary {
-  color: #ec2f11 !important; }
+  color: #75a6f0 !important; }
 
 .text-danger {
   color: #c9302c !important; }
@@ -367,9 +366,9 @@ strong, b {
   height: 50px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
-  bottom: 80px;
+  bottom: 10px;
   right: 10px;
-  background: #ec2f11;
+  background: #75a6f0;
   color: #fff;
   line-height: 50px;
   opacity: 0;
@@ -417,14 +416,14 @@ strong, b {
   padding-left: 23px;
   margin-top: 5px;
   display: block;
-  font-family: "Dosis", sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   .list-icon li:before {
     content: "\e64c";
     font-family: 'themify';
     position: absolute;
     left: 0;
     top: 0;
-    color: #ec2f11; }
+    color: #75a6f0; }
 
 .parallax-overlay {
   position: relative;
@@ -477,61 +476,6 @@ strong, b {
   font-size: 13px;
   margin-bottom: 15px; }
 
-.custom-checkbox {
-  display: inline-block;
-  padding-left: 34px;
-  position: relative;
-  cursor: pointer; }
-  .custom-checkbox .custom-control-indicator {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    display: inline-block;
-    vertical-align: middle;
-    left: 0;
-    top: 2px;
-    border-radius: 4px;
-    border: 1px solid rgba(117, 166, 240, 0.5); }
-    .custom-checkbox .custom-control-indicator:before {
-      content: "\e934";
-      position: absolute;
-      left: 0px;
-      top: 0;
-      font-size: 12px;
-      border-radius: 4px;
-      width: 22px;
-      height: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ec2f11;
-      font-weight: normal;
-      line-height: 1;
-      font-family: 'linearicons';
-      transform: scale(0.5);
-      -webkit-transform: scale(0.5);
-      opacity: 0;
-      transition: all .3s;
-      -webkit-transition: all .3s; }
-  .custom-checkbox input {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 25px;
-    height: 25px; }
-  .custom-checkbox input:checked + .custom-control-indicator:before {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    opacity: 1; }
-
-.bg-parallax .custom-checkbox .custom-control-indicator, .bg-dark .custom-checkbox .custom-control-indicator, .bg-primary .custom-checkbox .custom-control-indicator, .hero-form .custom-checkbox .custom-control-indicator {
-  border-color: rgba(255, 255, 255, 0.75); }
-  .bg-parallax .custom-checkbox .custom-control-indicator:before, .bg-dark .custom-checkbox .custom-control-indicator:before, .bg-primary .custom-checkbox .custom-control-indicator:before, .hero-form .custom-checkbox .custom-control-indicator:before {
-    color: white; }
-
-.bg-parallax .custom-control-description, .bg-dark .custom-control-description, .bg-primary .custom-control-description, .hero-form .custom-control-description {
-  color: #fff; }
-
 /*
 Buttons
 */
@@ -544,7 +488,7 @@ Buttons
   cursor: pointer;
   font-weight: 500;
   font-size: .95rem;
-  font-family: "Lato", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   padding: 13px 28px 13px;
   text-transform: uppercase !important;
   transition: all .3s ease-in-out;
@@ -581,7 +525,7 @@ Buttons
     padding: 18px 38px 18px;
     font-size: .95rem; }
   .btn.btn-link {
-    color: #ec2f11;
+    color: #75a6f0;
     text-transform: uppercase;
     width: 130px;
     text-align: center;
@@ -622,18 +566,18 @@ Buttons
       background-color: #fff; }
 
 .btn-outline-primary {
-  border: 2px solid #ec2f11;
+  border: 2px solid #75a6f0;
   background-color: transparent;
-  color: #ec2f11 !important; }
+  color: #75a6f0 !important; }
   .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
     color: #fff !important;
-    border-color: #ec2f11;
+    border-color: #75a6f0;
     background-color: transparent;
     transform: translateY(-2px);
     -webkit-transform: translateY(-2px); }
     .btn-outline-primary:hover:before, .btn-outline-primary:focus:before, .btn-outline-primary:active:before {
       width: 100%;
-      background-color: #ec2f11; }
+      background-color: #75a6f0; }
 
 .btn-outline-info {
   border: 2px solid #98b3db;
@@ -756,14 +700,14 @@ Buttons
   .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
     border: 0px;
     color: #333;
-    background-color: #ec2f11;
+    background-color: #75a6f0;
     color: #fff; }
 
 .btn-primary {
-  background: #ec2f11;
+  background: #75a6f0;
   color: #fff !important; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #ec2f11;
+    background: #75a6f0;
     color: #fff; }
 
 .btn-success {
@@ -1060,7 +1004,7 @@ Preloader style
   height: 5em;
   margin: -25px 0 0 -25px;
   text-indent: -9999em;
-  border-top: 0.5em solid #ec2f11;
+  border-top: 0.5em solid #75a6f0;
   border-right: 0.5em solid rgba(245, 245, 245, 0.5);
   border-bottom: 0.5em solid rgba(245, 245, 245, 0.5);
   border-left: 0.5em solid rgba(245, 245, 245, 0.5);
@@ -1095,8 +1039,6 @@ Preloader style
 /*
 Navbar
 */
-.navbar.navbar-light.bg-faded {
-  background-color: #283339; }
 
 .navbar .container {
   position: relative; }
@@ -1106,17 +1048,17 @@ Navbar
   font-weight: 500;
   color: #999;
   font-size: 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   cursor: pointer; }
   .navbar.navbar-light .nav-link.btn {
     color: #fff;
     margin-left: 30px; }
 
 .navbar-brand {
-  font-family: "Dosis", sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #ec2f11; }
+  color: #75a6f0; }
 
 @media (min-width: 992px) {
   .navbar-expand-lg.navbar {
@@ -1148,7 +1090,7 @@ Navbar
       position: relative;
       top: 7px; }
     .navbar-expand-lg .navbar-nav .nav-link:hover, .navbar-expand-lg .navbar-nav .nav-link:focus, .navbar-expand-lg .navbar-nav .nav-link.active {
-      border-bottom-color: #ec2f11; } }
+      border-bottom-color: #75a6f0; } }
 
 .navbar.navbar-light.navbar-sticky.fixed-top {
   animation: fadeInDown .3s;
@@ -1161,8 +1103,7 @@ Fullscreen hero
 .hero-section {
   padding-top: 10rem; }
   .hero-section h2.h1 {
-    font-size: 60px;
-    line-height: 1.25; }
+    font-size: 3rem; }
 
 /* 
     Icon cards
@@ -1270,7 +1211,7 @@ Pricing tables
       font-size: 15px;
       color: #999; }
       .plan ul li i {
-        color: #ec2f11;
+        color: #75a6f0;
         display: inline-block;
         margin-right: 10px; }
   .plan.popular-plan {
@@ -1301,10 +1242,10 @@ Dropdown menu styles
   font-weight: 400;
   font-size: .9rem;
   color: #333c4e;
-  font-family: "Lato", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-transform: capitalize; }
   .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:active {
-    color: #ec2f11;
+    color: #75a6f0;
     background-color: transparent; }
   .dropdown-menu .dropdown-item.current-demo {
     pointer-events: none;
@@ -1366,8 +1307,8 @@ Footer style
   padding: 3px 0px;
   border-bottom: 1px solid transparent; }
   .footer .list-unstyled a:hover {
-    border-bottom-color: #ec2f11;
-    color: #ec2f11; }
+    border-bottom-color: #75a6f0;
+    color: #75a6f0; }
 
 /** responsive style**/
 @media (max-width: 991px) {
@@ -1384,31 +1325,13 @@ Footer style
     border-bottom: 1px solid #eee; }
     .navbar.navbar-light.navbar-transparent.bg-faded .navbar-toggler, .navbar.navbar-light.navbar-transparent.bg-faded.fixed-top .navbar-toggler {
       position: absolute;
+      top: 5px;
       right: 15px;
-      background-image: none;
-      border: 0px;
+      background-color: transparent;
+      border-radius: 0px;
+      -webkit-border-radius: 0px;
       padding: 0px;
-      top: 10px;
-      width: 40px;
-      height: 36px;
-      line-height: 1; }
-
-/*         .navbar.navbar-light.navbar-transparent.bg-faded .navbar-toggler .navbar-toggler-icon:after, .navbar.navbar-light.navbar-transparent.bg-faded.fixed-top .navbar-toggler .navbar-toggler-icon:after {
-          font-family: 'Linearicons';
-          content: "\e92b";
-          position: absolute;
-          right: 0;
-          font-size: 2em;
-          top: 0px;
-          transition: all .3s;
-          -webkit-transition: all .3s;
-          color: #000;
-          cursor: pointer; } */
-  .navbar.navbar-expand-lg .nav-link.btn {
-    margin-left: 0px; }
-  .navbar.navbar-expand-lg .navbar-collapse {
-    height: 230px;
-    overflow-y: scroll; }
+      border: 0px; }
   .hero-section {
     padding-top: 100px !important;
     text-align: center; } }
